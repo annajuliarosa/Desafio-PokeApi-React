@@ -1,13 +1,171 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0 0 2% 0;
+  padding: 0;
+  box-sizing: 0;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(84, 108, 228) 0%, rgb(233, 105, 133) 100%);
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Lilita One', cursive;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 3px 2px 3px black;
+
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Mate SC', serif;
+  text-shadow: 1px 1px 1px white;
+  color: #23559b;
+  font-size: 16pt;
+  line-height: 0;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-weight: bolder;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  margin-top: 20%;
+  margin: 1px;
+  background-color: #5093e4;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  border: 2px solid white;
+}
+
+.logo img {
+  padding-top: 3%;
+  width: 35rem;
+  height: 11rem;
+}
+
+
+table {
+  background-color: #8cb7eb;
+  border-radius: 20px;
+  width: 30rem;
+  border: 3px solid white;
+  text-align: center;
+  margin: 1%;
+}
+
+tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+tr:hover {
+  background-color: rgb(63, 94, 251, 0.3);
+  border: 1px solid white;
+  border-radius: 18px;
+}
+
+.cointainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 5%;
+  align-items: center;
+}
+
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  margin-top: 5%;
+  width: 30rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  border: 3px solid white;
+  background-color: #8cb7eb;
+  padding: 1%;
+}
+
+img.imgPokemon {
+  width: 40%;
+
+}
+
+h1.tituloInformation {
+  margin-top: 10%;
+}
+
+h3 {
+  font-family: 'Mate SC', serif;
+  font-size: 19pt;
+  color: white;
+  text-shadow: 3px 2px 3px black;
+}
+
+.ImgPokemon {
+  width: 50%;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(84, 108, 228) 0%, rgb(233, 105, 133) 100%);
+  border-radius: 50%;
+}
+
+.tabelaPokemon {
+  display: flex;
+  flex-direction: column;
+}
+
+.paginacao {
+  margin: 10%;
+}
+
+svg {
+  font-size: 25px;
+  margin: 10% 0 0 3%;
+}
+
+.voltar {
+  border-radius: 50%;
+  padding: 2%;
+  background-color: #8cb7eb;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  font-family: 'Kanit', sans-serif;
+  color: white;
+  margin-top: 3rem;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo img {
+    width: 14rem;
+    height: 5rem;
+  }
+
+  table {
+    width: 15rem;
+
+  }
+
+  h1 {
+    font-size: 15pt
+  }
+
 }
